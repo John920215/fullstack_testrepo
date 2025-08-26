@@ -131,10 +131,11 @@ const Footer = () => {
                   <Image
                     priority
                     src={badge.srcUrl}
-                    width={33}
-                    height={100}
-                    alt="user"
-                    className="max-h-[15px]"
+                    width={46}
+                    height={30}
+                    alt="payment method"
+                    className="object-contain"
+                    style={{ width: "auto", height: "auto" }}
                   />
                 </span>
               ))}

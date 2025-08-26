@@ -33,10 +33,17 @@ const Brands = () => {
             key={brand.id}
             priority
             src={brand.srcUrl}
-            height={0}
-            width={0}
+            height={36}
+            width={192}
             alt={brand.id}
-            className="h-auto w-auto max-w-[116px] lg:max-w-48 max-h-[26px] lg:max-h-9 my-5 md:my-11"
+            className="my-5 md:my-11"
+            style={{ 
+              width: "auto", 
+              height: "auto",
+              maxWidth: "116px",
+              maxHeight: "26px"
+            }}
+            sizes="(max-width: 768px) 116px, 192px"
           />
         ))}
       </div>
