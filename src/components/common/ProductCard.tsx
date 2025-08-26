@@ -18,10 +18,11 @@ const ProductCard = ({ data }: ProductCardProps) => {
         <Image
           src={data.srcUrl}
           width={295}
-          height={298}
+          height={295}
           className="rounded-md w-full h-full object-contain hover:scale-110 transition-all duration-500"
           alt={data.title}
           priority
+          style={{ width: "100%", height: "100%" }}
         />
       </div>
       <strong className="text-black xl:text-xl">{data.title}</strong>

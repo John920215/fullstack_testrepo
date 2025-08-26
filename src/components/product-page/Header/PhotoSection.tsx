@@ -21,10 +21,11 @@ const PhotoSection = ({ data }: { data: Product }) => {
               <Image
                 src={photo}
                 width={152}
-                height={167}
+                height={152}
                 className="rounded-md w-full h-full object-cover hover:scale-110 transition-all duration-500"
                 alt={data.title}
                 priority
+                style={{ width: "100%", height: "100%" }}
               />
             </button>
           ))}
@@ -35,9 +36,10 @@ const PhotoSection = ({ data }: { data: Product }) => {
         <Image
           src={selected}
           width={444}
-          height={530}
+          height={444}
           className="rounded-md w-full h-full object-cover hover:scale-110 transition-all duration-500"
           alt={data.title}
+          style={{ width: "100%", height: "100%" }}
           priority
           unoptimized
         />
