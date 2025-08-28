@@ -1,7 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@config "../../tailwind.config";
+@import "tailwindcss";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -78,7 +75,6 @@
     --chart-5: 340 75% 55%;
   }
 }
-
 @layer base {
   * {
     border-color: hsl(var(--border));
