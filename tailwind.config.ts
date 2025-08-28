@@ -2,12 +2,6 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   darkMode: "selector",
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/styles/*.{css}",
-  ],
   theme: {
     extend: {
       fontFamily: {
@@ -99,6 +93,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("tailwind-styled-scrollbar")]
+  plugins: [require("tailwindcss-animate"), require("tailwind-styled-scrollbar"), require("tailwind-scrollbar"),]
 };
 export default config;
